@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main page -->
+  <url>
+    <loc>https://www.keepgoing.uz/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
+  <!-- Main page -->
+  <url>
+    <loc>https://keepgoing.uz</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Other pages -->
+  <!-- Add additional URLs here -->
+</urlset>
