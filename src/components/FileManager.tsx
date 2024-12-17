@@ -43,8 +43,8 @@ const FileManager: React.FC = () => {
   };
 
   return (
-    <div className="flex space-x-4">
-      <div className="w-1/3">
+    <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
+      <div className="w-full lg:w-1/3">
         <FileList
           files={files}
           onSelectFile={setSelectedFile}
@@ -52,16 +52,16 @@ const FileManager: React.FC = () => {
         />
         <button
           onClick={() => addFile("New File", "")}
-          className="mt-4 w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"
+          className="mt-4 w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 text-sm sm:text-base"
         >
           Create New File
         </button>
       </div>
-      <div className="w-2/3">
+      <div className="w-full lg:w-2/3">
         {selectedFile ? (
           <FileEditor file={selectedFile} onSave={editFile} />
         ) : (
-          <div className="text-center text-gray-500">
+          <div className="text-center text-gray-500 p-4 border rounded">
             Select a file to edit or create a new one
           </div>
         )}
